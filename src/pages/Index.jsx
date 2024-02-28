@@ -49,7 +49,7 @@ const Index = () => {
               <Button leftIcon={<FaPlus />} colorScheme="teal" size="lg" onClick={() => (window.location.href = "/form")}>
                 Get Started
               </Button>
-              <Button colorScheme="teal" size="lg" as={Link} to="/profile">
+              <Button colorScheme="teal" size="lg" as={Link} to="/profile" onClick={() => (window.location.href = "/profile")}>
                 Create Profile
               </Button>
             </VStack>
