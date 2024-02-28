@@ -4,6 +4,22 @@ import { Box, Text, VStack, Input, Select, FormControl, FormLabel } from "@chakr
 import { InputGroup, InputRightElement, Button } from "@chakra-ui/react";
 
 const FormPage = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const formElements = event.target.elements;
+    const formData = {
+      geoposition: formElements.geoposition.value,
+      oberbodenhorizont: formElements.oberbodenhorizont.value,
+      unterbodenhorizont: formElements.unterbodenhorizont.value,
+      untergrundhorizont: formElements.untergrundhorizont.value,
+      phwert: formElements.phwert.value,
+      feuchtigkeit: formElements.feuchtigkeit.value,
+    };
+
+    console.log("Form data to be sent to the API:", formData);
+    alert("Data would be saved to the database if connected to the server.");
+  };
   const fetchGeolocation = () => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -71,9 +87,11 @@ const FormPage = () => {
           <FormLabel>Feuchtigkeit</FormLabel>
           <Input type="number" placeholder="Enter Feuchtigkeit" />
         </FormControl>
-        <Button colorScheme="blue" size="lg" type="submit">
-          Submit
-        </Button>
+        <form onSubmit={handleSubmit}>
+          <Button colorScheme="blue" size="lg" type="submit">
+            Submit
+          </Button>
+        </form>
       </VStack>
     </Box>
   );
