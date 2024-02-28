@@ -1,5 +1,5 @@
 import React from "react";
-import { ChakraProvider, Box, Text, VStack, Grid, theme, Button, Image, Heading, Container, Flex, Spacer, IconButton } from "@chakra-ui/react";
+import { ChakraProvider, Box, Text, VStack, Grid, theme, Button, Image, Heading, Container, Flex, Spacer, IconButton, Input } from "@chakra-ui/react";
 import { FaPlus, FaTwitter, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Index = () => {
@@ -23,6 +23,11 @@ const Index = () => {
               </Flex>
             </Container>
 
+            <VStack spacing={4}>
+              <Input placeholder="Full Name" />
+              <Input placeholder="Email Address" />
+              <Input placeholder="Phone Number" />
+            </VStack>
             <VStack spacing={6}>
               <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxlbXBsb3llZSUyMHBvcnRyYWl0fGVufDB8fHx8MTcwOTEwMjcyMXww&ixlib=rb-4.0.3&q=80&w=1080" alt="Employee portrait" />
               <Heading as="h1" size="2xl">
