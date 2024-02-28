@@ -42,7 +42,7 @@ const Index = () => {
             <VStack spacing={6}>
               <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxlbXBsb3llZSUyMHBvcnRyYWl0fGVufDB8fHx8MTcwOTEwMjcyMXww&ixlib=rb-4.0.3&q=80&w=1080" alt="Employee portrait" />
               <Heading as="h1" size="2xl">
-                Welcome to Our Company
+                Welcome to your own Soil
               </Heading>
               <Text color="gray.500">We're leading the industry in innovation and customer service.</Text>
               <Button leftIcon={<FaPlus />} colorScheme="teal" size="lg" onClick={() => (window.location.href = "/form")}>
