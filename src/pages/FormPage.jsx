@@ -1,21 +1,38 @@
 import React from "react";
 import { Box, Text, VStack, Input, Select, FormControl, FormLabel } from "@chakra-ui/react";
 
+import { InputGroup, InputRightElement, Button } from "@chakra-ui/react";
+
 const FormPage = () => {
+  const fetchGeolocation = () => {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        document.getElementById("geoposition").value = `Lat: ${position.coords.latitude}, Lng: ${position.coords.longitude}`;
+      },
+      (error) => {
+        console.error(error);
+      },
+    );
+  };
+
   return (
     <Box p={4}>
       <Text fontSize="2xl" fontWeight="bold" mb={6}>
         Please fill out the form
       </Text>
       <VStack spacing={4}>
-        <FormControl id="latitude">
-          <FormLabel>Latitude</FormLabel>
-          <Input type="text" placeholder="Enter latitude" />
+        <FormControl id="geoposition">
+          <FormLabel>Geoposition</FormLabel>
+          <InputGroup>
+            <Input type="text" placeholder="Enter geoposition" />
+            <InputRightElement width="4.5rem">
+              <Button h="1.75rem" size="sm" onClick={fetchGeolocation}>
+                Get GPS
+              </Button>
+            </InputRightElement>
+          </InputGroup>
         </FormControl>
-        <FormControl id="longitude">
-          <FormLabel>Longitude</FormLabel>
-          <Input type="text" placeholder="Enter longitude" />
-        </FormControl>
+
         <FormControl id="oberbodenhorizont">
           <FormLabel>Oberbodenhorizont</FormLabel>
           <Select placeholder="Select option">{/* Options will be added here */}</Select>
