@@ -45,11 +45,10 @@ const Index = () => {
               <Heading as="h1" size="2xl">
                 Welcome to your own Soil
               </Heading>
-              <Text color="gray.500">Entdecke jetzt auf welchem Boden du gerade stehst!</Text>
+              <Text color="gray.500">Buckle up for a Soil and Soul Adventure – where the map leads us to the heart of the earth and beyond!</Text>
               <Button leftIcon={<FaPlus />} colorScheme="teal" size="lg" onClick={() => (window.location.href = "/form")}>
                 Get Started
               </Button>
-              
             </VStack>
             <VStack spacing={8}>
               <Box maxW="32rem">
