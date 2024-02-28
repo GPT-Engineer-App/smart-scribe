@@ -9,7 +9,7 @@ const NavigationBar = () => {
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
 
   const toggleProfileMenu = () => {
-    setIsProfileMenuOpen(!isProfileMenuOpen);
+    setIsProfileMenuOpen(true);
   };
 
   return (
