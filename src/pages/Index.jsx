@@ -44,7 +44,7 @@ const Index = () => {
               <Heading as="h1" size="2xl">
                 Welcome to your own Soil
               </Heading>
-              <Text color="gray.500">We're leading the industry in innovation and customer service.</Text>
+              <Text color="gray.500">Entdecke jetzt auf welchem Boden du gerade stehst!</Text>
               <Button leftIcon={<FaPlus />} colorScheme="teal" size="lg" onClick={() => (window.location.href = "/form")}>
                 Get Started
               </Button>
