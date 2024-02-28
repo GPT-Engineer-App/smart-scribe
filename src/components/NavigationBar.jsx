@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Button, Flex, Spacer } from "@chakra-ui/react";
+import { Box, Button, Flex, Spacer, IconButton } from "@chakra-ui/react";
+import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
@@ -18,6 +19,7 @@ const NavigationBar = () => {
         <Button as={Link} to="/profile" colorScheme="teal" ml={2}>
           Profile
         </Button>
+        <IconButton as={Link} to="/profile" colorScheme="teal" aria-label="Profile" icon={<FaUser />} ml={2} />
       </Box>
     </Flex>
   );
