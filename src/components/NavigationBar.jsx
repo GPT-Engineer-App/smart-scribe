@@ -36,8 +36,11 @@ const NavigationBar = () => {
             <MenuItem as={Link} to="/settings">
               Settings
             </MenuItem>
-            <MenuItem as={Link} to="/logout">
-              Logout
+            <MenuItem as={Link} to="/login">
+              Log In/Out
+            </MenuItem>
+            <MenuItem as={Link} to="#">
+              Change Password
             </MenuItem>
           </MenuList>
         </Menu>
