@@ -1,6 +1,6 @@
 import React from "react";
 import { ChakraProvider, Box, Text, VStack, Grid, theme, Button, Image, Heading, Container, Flex, Spacer, IconButton, Link } from "@chakra-ui/react";
-import { FaPlus, FaTwitter, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaPlus, FaTwitter, FaFacebook, FaLinkedin, FaGithub, FaUser } from "react-icons/fa";
 
 import { useState } from "react";
 
@@ -36,6 +36,7 @@ const Index = () => {
                   <IconButton variant="ghost" icon={<FaFacebook />} aria-label="Facebook" isRound />
                   <IconButton variant="ghost" icon={<FaLinkedin />} aria-label="LinkedIn" isRound />
                   <IconButton variant="ghost" icon={<FaGithub />} aria-label="GitHub" isRound />
+                  <IconButton as={Link} to="/profile" variant="ghost" icon={<FaUser />} aria-label="Profile" isRound ml={2} />
                 </Box>
               </Flex>
             </Container>
