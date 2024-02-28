@@ -52,11 +52,12 @@ const FormPage = () => {
         <FormControl id="oberbodenhorizont">
           <FormLabel>Oberbodenhorizont</FormLabel>
           <Select placeholder="Select option">
-            {Array.from({ length: 21 }, (_, i) => (
-              <option key={i} value={i}>
-                {i}
-              </option>
-            ))}
+            <option value="1">🌱 Young Plant</option>
+            <option value="2">🌿 Herb</option>
+            <option value="3">🍀 Clover</option>
+            <option value="4">🌲 Pine Tree</option>
+            <option value="5">🌳 Oak Tree</option>
+            {/* Add additional options with different emojis or Unicode symbols as needed */}
           </Select>
         </FormControl>
         <FormControl id="unterbodenhorizont">
