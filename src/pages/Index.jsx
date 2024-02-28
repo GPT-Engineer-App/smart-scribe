@@ -52,7 +52,18 @@ const Index = () => {
                   Select Image
                 </Button>
               </Flex>
-              <Input placeholder="Phone Number" />
+              <Flex>
+                <Input placeholder="Phone Number" />
+                <Button ml={2} colorScheme="blue" onClick={() => alert("Phone feature coming soon!")}>
+                  Add Phone
+                </Button>
+              </Flex>
+              <Flex>
+                <Input placeholder="Another Field" />
+                <Button ml={2} colorScheme="blue" onClick={() => alert("Another feature coming soon!")}>
+                  Add Another
+                </Button>
+              </Flex>
             </VStack>
             <VStack spacing={6}>
               <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxlbXBsb3llZSUyMHBvcnRyYWl0fGVufDB8fHx8MTcwOTEwMjcyMXww&ixlib=rb-4.0.3&q=80&w=1080" alt="Employee portrait" />
