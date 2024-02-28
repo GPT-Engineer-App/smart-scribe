@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Box, Text, VStack, Input, FormControl, FormLabel, Button } from "@chakra-ui/react";
 
 const ProfilePage = () => {
@@ -14,10 +15,13 @@ const ProfilePage = () => {
       [event.target.name]: event.target.value,
     });
 
+  const navigate = useNavigate();
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("Profile data to be saved:", profile);
     alert("Profile created! (data would be saved if backend were connected)");
+    navigate("/duplicate-home");
   };
 
   return (
