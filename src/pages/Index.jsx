@@ -2,7 +2,23 @@ import React from "react";
 import { ChakraProvider, Box, Text, VStack, Grid, theme, Button, Image, Heading, Container, Flex, Spacer, IconButton, Input } from "@chakra-ui/react";
 import { FaPlus, FaTwitter, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
+import { useState } from "react";
+
 const Index = () => {
+  const handleGeolocationFetch = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          alert(`Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`);
+        },
+        () => {
+          alert("Geolocation is not supported by this browser or permission denied.");
+        },
+      );
+    } else {
+      alert("Geolocation is not supported by this browser.");
+    }
+  };
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
@@ -23,8 +39,13 @@ const Index = () => {
               </Flex>
             </Container>
 
-            <VStack spacing={4}>
-              <Input placeholder="Full Name" />
+            <VStack spacing={4} align="start">
+              <Flex>
+                <Input placeholder="Full Name" />
+                <Button ml={2} onClick={handleGeolocationFetch} colorScheme="blue">
+                  Get Location
+                </Button>
+              </Flex>
               <Input placeholder="Email Address" />
               <Input placeholder="Phone Number" />
             </VStack>
