@@ -46,7 +46,12 @@ const Index = () => {
                   Get Location
                 </Button>
               </Flex>
-              <Input placeholder="Email Address" />
+              <Flex>
+                <Input placeholder="Email Address" />
+                <Button ml={2} colorScheme="blue" onClick={() => alert("Select a value from comparison images feature coming soon!")}>
+                  Select Image
+                </Button>
+              </Flex>
               <Input placeholder="Phone Number" />
             </VStack>
             <VStack spacing={6}>
