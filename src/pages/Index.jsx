@@ -1,5 +1,5 @@
 import React from "react";
-import { ChakraProvider, Box, Text, VStack, Grid, theme, Button, Image, Heading, Container, Flex, Spacer, IconButton, Input } from "@chakra-ui/react";
+import { ChakraProvider, Box, Text, VStack, Grid, theme, Button, Image, Heading, Container, Flex, Spacer, IconButton } from "@chakra-ui/react";
 import { FaPlus, FaTwitter, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 import { useState } from "react";
@@ -20,7 +20,10 @@ const Index = () => {
     }
   };
   return (
+    
+
     <ChakraProvider theme={theme}>
+      <NavigationBar />
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
           <VStack spacing={8}>
@@ -38,7 +41,7 @@ const Index = () => {
                 </Box>
               </Flex>
             </Container>
-            // The above VStack containing form fields is removed
+            {/* The above VStack containing form fields is removed */}
             <VStack spacing={6}>
               <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxlbXBsb3llZSUyMHBvcnRyYWl0fGVufDB8fHx8MTcwOTEwMjcyMXww&ixlib=rb-4.0.3&q=80&w=1080" alt="Employee portrait" />
               <Heading as="h1" size="2xl">
