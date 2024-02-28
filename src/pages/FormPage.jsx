@@ -83,6 +83,10 @@ const FormPage = () => {
           <FormLabel>ph-Wert</FormLabel>
           <Input type="number" placeholder="Enter ph-Wert" />
         </FormControl>
+        <FormControl id="schlag">
+          <FormLabel>Schlag</FormLabel>
+          <Input type="text" placeholder="Enter Schlag" name="schlag" />
+        </FormControl>
         <FormControl id="feuchtigkeit">
           <FormLabel>Feuchtigkeit</FormLabel>
           <Input type="number" placeholder="Enter Feuchtigkeit" />
