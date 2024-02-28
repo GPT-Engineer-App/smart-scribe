@@ -27,7 +27,7 @@ const Index = () => {
             <Container maxW="container.xl">
               <Flex>
                 <Box p="2">
-                  <Heading size="md">MyCompany</Heading>
+                  <Heading size="md">SaySoil</Heading>
                 </Box>
                 <Spacer />
                 <Box>
