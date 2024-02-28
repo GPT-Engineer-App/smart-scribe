@@ -35,15 +35,33 @@ const FormPage = () => {
 
         <FormControl id="oberbodenhorizont">
           <FormLabel>Oberbodenhorizont</FormLabel>
-          <Select placeholder="Select option">{/* Options will be added here */}</Select>
+          <Select placeholder="Select option">
+            {Array.from({ length: 21 }, (_, i) => (
+              <option key={i} value={i}>
+                {i}
+              </option>
+            ))}
+          </Select>
         </FormControl>
         <FormControl id="unterbodenhorizont">
           <FormLabel>Unterbodenhorizont</FormLabel>
-          <Select placeholder="Select option">{/* Options will be added here */}</Select>
+          <Select placeholder="Select option">
+            {Array.from({ length: 21 }, (_, i) => (
+              <option key={i} value={i}>
+                {i}
+              </option>
+            ))}
+          </Select>
         </FormControl>
         <FormControl id="untergrundhorizont">
           <FormLabel>Untergrundhorizont</FormLabel>
-          <Select placeholder="Select option">{/* Options will be added here */}</Select>
+          <Select placeholder="Select option">
+            {Array.from({ length: 21 }, (_, i) => (
+              <option key={i} value={i}>
+                {i}
+              </option>
+            ))}
+          </Select>
         </FormControl>
       </VStack>
     </Box>
