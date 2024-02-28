@@ -2,7 +2,7 @@ import React from "react";
 import Index from "./Index";
 
 const DuplicateIndex = () => {
-  return <Index />;
+  return <Index showProfileButton={false} />;
 };
 
 export default DuplicateIndex;
