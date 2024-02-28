@@ -54,14 +54,14 @@ const Index = () => {
               </Flex>
               <Flex>
                 <Input placeholder="Unterbodenhorizont" />
-                <Button ml={2} colorScheme="blue" onClick={() => alert("Phone feature coming soon!")}>
-                  Add Phone
+                <Button ml={2} colorScheme="blue" onClick={() => alert("Select a value from comparison images feature coming soon!")}>
+                  Select Image
                 </Button>
               </Flex>
               <Flex>
                 <Input placeholder="Untergrundhorizont" />
-                <Button ml={2} colorScheme="blue" onClick={() => alert("Another feature coming soon!")}>
-                  Add Another
+                <Button ml={2} colorScheme="blue" onClick={() => alert("Select a value from comparison images feature coming soon!")}>
+                  Select Image
                 </Button>
               </Flex>
             </VStack>
