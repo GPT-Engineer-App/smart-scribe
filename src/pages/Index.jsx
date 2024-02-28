@@ -1,5 +1,5 @@
 import React from "react";
-import { ChakraProvider, Box, Text, VStack, Grid, theme, Button, Image, Heading, Container, Flex, Spacer, IconButton } from "@chakra-ui/react";
+import { ChakraProvider, Box, Text, VStack, Grid, theme, Button, Image, Heading, Container, Flex, Spacer, IconButton, Link } from "@chakra-ui/react";
 import { FaPlus, FaTwitter, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 import { useState } from "react";
@@ -20,10 +20,8 @@ const Index = () => {
     }
   };
   return (
-    
-
     <ChakraProvider theme={theme}>
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
           <VStack spacing={8}>
@@ -57,6 +55,9 @@ const Index = () => {
                 <Text mb={4}>Our team is dedicated to providing you with the best experience possible. We believe in quality, commitment, and communication. Join us today and let's achieve greatness together.</Text>
                 <Button colorScheme="blue" size="lg">
                   Learn More
+                </Button>
+                <Button colorScheme="teal" size="lg" as={Link} to="/profile">
+                  Create Profile
                 </Button>
               </Box>
             </VStack>
