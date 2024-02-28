@@ -63,6 +63,17 @@ const FormPage = () => {
             ))}
           </Select>
         </FormControl>
+        <FormControl id="phwert">
+          <FormLabel>ph-Wert</FormLabel>
+          <Input type="number" placeholder="Enter ph-Wert" />
+        </FormControl>
+        <FormControl id="feuchtigkeit">
+          <FormLabel>Feuchtigkeit</FormLabel>
+          <Input type="number" placeholder="Enter Feuchtigkeit" />
+        </FormControl>
+        <Button colorScheme="blue" size="lg" type="submit">
+          Submit
+        </Button>
       </VStack>
     </Box>
   );
