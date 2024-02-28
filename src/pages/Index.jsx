@@ -32,8 +32,6 @@ const Index = () => {
                 </Box>
                 <Spacer />
                 <Box>
-                  <IconButton variant="ghost" icon={<FaTwitter />} aria-label="Twitter" isRound />
-                  <IconButton variant="ghost" icon={<FaFacebook />} aria-label="Facebook" isRound />
                   <IconButton variant="ghost" icon={<FaLinkedin />} aria-label="LinkedIn" isRound />
                   <IconButton variant="ghost" icon={<FaGithub />} aria-label="GitHub" isRound />
                   <IconButton as={Link} to="/profile" variant="ghost" icon={<FaUser />} aria-label="Profile" isRound ml={2} />
