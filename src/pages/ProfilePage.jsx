@@ -4,7 +4,10 @@ import { Box, Text, VStack, Input, FormControl, FormLabel, Button } from "@chakr
 
 const ProfilePage = () => {
   const [profile, setProfile] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
+    firstName: "",
+    lastName: "",
     email: "",
     password: "",
   });
@@ -12,7 +15,7 @@ const ProfilePage = () => {
   const handleChange = (event) =>
     setProfile({
       ...profile,
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value.trim(),
     });
 
   const navigate = useNavigate();
@@ -30,9 +33,14 @@ const ProfilePage = () => {
         Create your profile
       </Text>
       <VStack as="form" spacing={4} onSubmit={handleSubmit}>
-        <FormControl id="name">
-          <FormLabel>Name</FormLabel>
-          <Input type="text" placeholder="Enter your name" name="name" value={profile.name} onChange={handleChange} />
+        <FormControl id="first-name">
+          <FormLabel>First Name</FormLabel>
+          <Input type="text" placeholder="Enter your first name" name="firstName" value={profile.firstName} onChange={handleChange} />
+        </FormControl>
+
+        <FormControl id="last-name">
+          <FormLabel>Last Name</FormLabel>
+          <Input type="text" placeholder="Enter your last name" name="lastName" value={profile.lastName} onChange={handleChange} />
         </FormControl>
 
         <FormControl id="email">
