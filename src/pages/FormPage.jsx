@@ -3,7 +3,12 @@ import { Box, Text, VStack, Input, Select, FormControl, FormLabel } from "@chakr
 
 import { InputGroup, InputRightElement, Button } from "@chakra-ui/react";
 
+import { useEffect } from "react";
+
 const FormPage = () => {
+  useEffect(() => {
+    document.title = "Register new Location";
+  }, []);
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -34,7 +39,7 @@ const FormPage = () => {
   return (
     <Box p={4}>
       <Text fontSize="2xl" fontWeight="bold" mb={6}>
-        Please fill out the form
+        Register a new Location
       </Text>
       <VStack spacing={4}>
         <FormControl id="geoposition">
