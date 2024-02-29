@@ -32,7 +32,7 @@ const Index = () => {
                 </Box>
                 <Spacer />
                 <Box>
-                  <IconButton variant="ghost" icon={<FaLinkedin />} aria-label="LinkedIn" isRound />
+                  <IconButton variant="ghost" icon={<FaLinkedin />} aria-label="LinkedIn" isRound as="a" href="https://www.linkedin.com/in/florian-manthey/" target="_blank" rel="noopener noreferrer" />
                   <IconButton variant="ghost" icon={<FaGithub />} aria-label="GitHub" isRound />
                   <IconButton as={Link} to="/profile" variant="ghost" icon={<FaUser />} aria-label="Profile" isRound ml={2} />
                 </Box>
