@@ -24,7 +24,7 @@ const ProfilePage = () => {
     event.preventDefault();
     console.log("Profile data to be saved:", profile);
     alert("Profile created! (data would be saved if backend were connected)");
-    navigate("/duplicate-home");
+    navigate("/");
   };
 
   return (
