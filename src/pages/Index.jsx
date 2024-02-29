@@ -40,7 +40,7 @@ const Index = () => {
             </Container>
             {/* The above VStack containing form fields is removed */}
             <VStack spacing={6}>
-              <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxlbXBsb3llZSUyMHBvcnRyYWl0fGVufDB8fHx8MTcwOTEwMjcyMXww&ixlib=rb-4.0.3&q=80&w=1080" alt="Employee portrait" />
+              <Image borderRadius="full" boxSize="150px" src="https://media-exp1.licdn.com/dms/image/C4E03AQHfS9o8H5LeqA/profile-displayphoto-shrink_800_800/0/1517370006581?e=2147483647&v=beta&t=GNX6wKb6oZWH6ZxO9v3fsChD4c4_T-9qXH6xDC18Fjc" alt="Florian Manthey portrait" />
               <Heading as="h1" size="2xl">
                 Welcome to your own Soil
               </Heading>
