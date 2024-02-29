@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Box, Text, VStack, Input, Select, FormControl, FormLabel } from "@chakra-ui/react";
 
 import { InputGroup, InputRightElement, Button } from "@chakra-ui/react";
 
-import { useEffect } from "react";
+// Duplicate import of 'useEffect' removed
 
 const FormPage = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     document.title = "Register new Location";
   }, []);
+
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -22,8 +27,16 @@ const FormPage = () => {
       feuchtigkeit: formElements.feuchtigkeit.value,
     };
 
-    console.log("Form data to be sent to the API:", formData);
-    alert("Data would be saved to the database if connected to the server.");
+    // Handle form submission
+    setFormSubmitted(true);
+
+    setTimeout(() => {
+      console.log("Form data to be sent to the API:", formData);
+      alert("Data would be saved to the database if connected to the server.");
+
+      // Redirect to homepage after successful form submission
+      navigate("/");
+    }, 500); // A small delay to ensure the message is seen before redirecting
   };
   const fetchGeolocation = () => {
     navigator.geolocation.getCurrentPosition(
