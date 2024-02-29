@@ -57,6 +57,8 @@ const FormPage = () => {
             <option value="3">🍀 Clover</option>
             <option value="4">🌲 Pine Tree</option>
             <option value="5">🌳 Oak Tree</option>
+            <option value="6">🌾 Grassland</option>
+            <option value="7">🏞️ Swamp</option>
           </Select>
         </FormControl>
         <FormControl id="oberbodenhorizont">
