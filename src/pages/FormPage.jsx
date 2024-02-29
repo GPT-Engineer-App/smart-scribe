@@ -102,7 +102,7 @@ const FormPage = () => {
         </FormControl>
         <FormControl id="feuchtigkeit">
           <FormLabel>Feuchtigkeit</FormLabel>
-          <Input type="number" placeholder="Enter Feuchtigkeit" />
+          <Input type="number" placeholder="Enter Feuchtigkeit (%)" />
         </FormControl>
         <form onSubmit={handleSubmit}>
           <Button colorScheme="blue" size="lg" type="submit">
